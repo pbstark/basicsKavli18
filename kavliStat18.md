@@ -1,7 +1,7 @@
 ---
 header-includes:
   - \hypersetup{colorlinks=true,
-            linkcolor=blue,
+        linkcolor=blue,
             urlcolor=blue,
             allbordercolors={0 0 0},
             pdfborderstyle={/S/U/W 1}}
@@ -13,7 +13,7 @@ header-includes:
 
 **This document:** www.github.com/pbstark/Kavli18/kavliStat18.pdf
 
-### Last edited 9 July 2018
+### Last edited 10 July 2018
 
 --- 
 
@@ -21,6 +21,7 @@ header-includes:
 
 1. Boring, A., K. Ottoboni, and P.B. Stark, 2016. Student evaluations of teaching (mostly) do not measure teaching effectiveness, _ScienceOpen Research_, DOI: 10.14293/S2199-1006.1.SOR-EDU.AETBZC.v1 https://www.scienceopen.com/document?vid=818d8ec0-5908-47d8-86b4-5dc38f04b23e
 1. Freedman, D.A., 1995. Some issues in the foundations of statistics, _Foundations of Science_, _1_, 19--39. https://doi.org/10.1007/BF00208723
+1. Freedman, D.A., 2008. On types of scientific inquiry: the role of qualitative reasoning, _The Oxford Handbook of Political Methodology_, Box-Steffensmeier, J.M., H.E. Brady, and D. Collier (eds), Oxford University Press, Oxford. DOI: 10.1093/oxfordhb/9780199286546.003.0012. [Preprint](https://www.stat.berkeley.edu/~census/anomaly.pdf)
 1. Freedman, D.A., 2009. _Statistical Models: Theory and Practice_, 2nd edition, Cambridge University Press.
 1. Freedman, D.A., R. Pisani, and R. Purves, 2007. _Statistics, 4th edition_, W.W. Norton, New York.
 1. Klemes, V., 1989. The Improbable Probabilities of Extreme Floods and Droughts, in O. Starosolsky and O.M. Meldev (eds), _Hydrology and Disasters_, James and James, London, 43--51.  
@@ -52,6 +53,100 @@ The method of comparison, experiments and observational studies, Snow’s invest
     + Morabia (2006)
 1. Work the self-test problems in the chapters of SticiGui assigned above.
 1. **To hand in:** Look at [the data Morabia transcribed from P.C.A. Louis on bloodletting for pneumonia](http://www.epidemiology.ch/history/louis.htm). Is Louis's work an observational study or an experiment? Do you think it amounts to a "natural experiment," like Snow's work on Cholera? Why or why not? Give two scientific questions (_statistical hypotheses_) those data might address. What do you think the most important confounding factors would be, for those two hypotheses? What would be the most natural "as-if" randomization to use in analyzing the data to address the hypotheses you formulated, if you were to consider the data to be a natural experiment? What are the controls? Is the experiment blind? Double-blind? Explain how you might use the Neyman model to analyze the data. Is the randomization assumption reasonable? Why or why not? Is the non-interference assumption reasonable? Why or why not?
+
+### Notes.
+
+Snow on London cholera epidemic of 1853-1854.
+
+John Snow was a nineteenth-century physician in London, England.
+In 1855, decades before the germ theory of disease was accepted, Snow showed
+that cholera is caused by an infectious organism that lives in water.
+His argument had many facets:
+an apparent time lag between infection and symptoms, explained by the time
+it takes the organism to reproduce in the human body; propagation of the disease along
+trade routes;
+the fact that sailors visiting ports where there was cholera did not get sick until
+they came in contact with locals; identifying the first and second cases in the 1848
+London cholera epidemic (the first was a seaman named John Harnold who had just come
+from Hamburg,  Germany, where there was a cholera outbreak; the second was the
+person who stayed in the room Harnold had used, after Harnold died).
+Snow found apartment buildings where many people had died, adjacent to apartment
+buildings where few or none had died; their water suppliers differed.
+Following an outbreak of cholera in 1854, Snow made a map of the residences of victims.
+They were concentrated near a public water pump: the Broad Street pump in Soho.
+A few buildings in the area were relatively unaffected by cholera; it turned out that
+their water supplies were different (a brewery and a poorhouse, both of which had their
+own pumps).
+Snow showed that most of the cholera victims in other parts of London had drunk from
+the Broad Street pump.
+
+"Miasma" was the competing theory; fit the data quite well (function of elevation above the Thames).
+
+>Although the
+above facts shown in the table above afford very strong evidence of the
+powerful influence which the drinking of water containing the sewage of
+a town exerts over the spread of cholera, when that disease is present,
+yet the question does not end here; for the intermixing of the water supply
+of the Southwark and Vauxhall Company with that of the Lambeth Company,
+over an extensive part of London, admitted of the subject being sifted
+in such a way as to yield the most incontrovertible proof on one side or
+the other.
+In the subdistricts enumerated in the above table as being supplied
+by both Companies, the mixing of the supply is of the most intimate kind.
+The pipes of each company go down all the streets, and into nearly all
+the courts and alleys.
+A few houses are supplied by one Company and a few
+by the other, according to the decision of the owner or occupier at that
+time when the Water Companies were in active competition.
+In many cases a single house has a supply different from that on either side.
+Each company supplies both rich and poor, both large houses and small; there
+is no difference either in the condition or occupation of the persons receiving
+the water of the different Companies.
+Now it must be evident
+that, if the diminution of cholera, in the districts partly supplied with
+improved water, depended on this supply, the houses receiving it would
+be the houses enjoying the whole benefit of the diminutions of the malady,
+whilst the houses supplied by the water from Battersea Fields would suffer
+the same mortality as they would if the improved supply did not exist
+at all.
+As there is no difference whatever in the houses or the people
+receiving the supply of the two Water Companies, or in any of the physical
+conditions with which they are surrounded, it is obvious that no experiment
+could have been devised which would more thoroughly test the effect of
+water supply on the progress of cholera than this, which circumstances
+placed ready made before the observer.
+
+>The experiment, too, was on the grandest scale.  No fewer than three
+hundred thousand people of both sexes, of every age and occupation,
+and of every rank and station, from gentlefolks down to the very poor,
+were divided into groups without their choice, and in most cases,
+without their knowledge; one group being supplied with water containing the
+sewage of London, and amongst it, whatever might have come from the
+cholera patients; the other group having water quite free from such impurity.
+</blockquote>
+
+>To turn this grand experiment to account, all that was required was to learn the supply
+of water to each individual house where a fatal attack of cholera might occur.
+
+Lambeth water company started drawing its water further upstream
+in 1852 (water is cleaner upstream of the city, because refuse and sewage are dumped
+into the river as the river flows through the city).
+This allowed Snow to compare the rates of cholera in the 1853&ndash;1854 epidemics
+(in which about 2,800 people died, more than 500 in a single 10-day period)
+with earlier epidemics, when the Lambeth company drew its water further downstream,
+along with one of its competitors, the Southwark and Vauxhall company.
+Which buildings were served by which water company was largely
+accidental: other than water supplier, there was not much difference that could
+account for the differences in the rate of cholera.
+
+### Cholera deaths by water source, London epidemic of 1853&ndash;1854. Snow's Table IX, via Freedman, 1999.
+
+| water supplier | houses | deaths from cholera | deaths per 10,000 |
+|:---------------|-------:|--------------------:|------------------:|
+| Southwark & Vauxhall | 40,046 | 1,263 | 315 |
+| Lambeth | 26,107 | 98 | 37 |
+| rest of London | 256,423 | 1,422 | 59 |
+
 
 ---
 
