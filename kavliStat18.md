@@ -50,6 +50,7 @@ The method of comparison, experiments and observational studies, Snow’s invest
     + SticiGui [Logic](https://www.stat.berkeley.edu/~stark/SticiGui/Text/logic.htm)
     + SticiGui [Axioms of Probability](https://www.stat.berkeley.edu/~stark/SticiGui/Text/probabilityAxioms.htm)
     + SticiGui [Experiments](https://www.stat.berkeley.edu/~stark/SticiGui/Text/experiments.htm)
+    + Freedman (2008)
     + Morabia (2006)
 1. Work the self-test problems in the chapters of SticiGui assigned above.
 1. **To hand in:** Look at [the data Morabia transcribed from P.C.A. Louis on bloodletting for pneumonia](http://www.epidemiology.ch/history/louis.htm). Is Louis's work an observational study or an experiment? Do you think it amounts to a "natural experiment," like Snow's work on Cholera? Why or why not? Give two scientific questions (_statistical hypotheses_) those data might address. What do you think the most important confounding factors would be, for those two hypotheses? What would be the most natural "as-if" randomization to use in analyzing the data to address the hypotheses you formulated, if you were to consider the data to be a natural experiment? What are the controls? Is the experiment blind? Double-blind? Explain how you might use the Neyman model to analyze the data. Is the randomization assumption reasonable? Why or why not? Is the non-interference assumption reasonable? Why or why not?
