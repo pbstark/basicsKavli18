@@ -1,3 +1,12 @@
+---
+header-includes:
+  - \hypersetup{colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            allbordercolors={0 0 0},
+            pdfborderstyle={/S/U/W 1}}
+---
+
 # Lectures on Foundations of Statistics and Inference
 
 ## P.B. Stark www.stat.berkeley.edu/~stark
@@ -14,7 +23,8 @@
 1. Freedman, D.A., 1995. Some issues in the foundations of statistics, _Foundations of Science_, _1_, 19--39. https://doi.org/10.1007/BF00208723
 1. Freedman, D.A., 2009. _Statistical Models: Theory and Practice_, 2nd edition, Cambridge University Press.
 1. Freedman, D.A., R. Pisani, and R. Purves, 2007. _Statistics, 4th edition_, W.W. Norton, New York.
-1. Klemes, V., 1989. The Improbable Probabilities of Extreme Floods and Droughts, in O. Starosolsky and O.M. Meldev (eds), _Hydrology and Disasters_, James and James, London, 43--51. https://www.itia.ntua.gr/en/getfile/1107/1/documents/1997_ImprobProbabilities_OCR.pdf
+1. Klemes, V., 1989. The Improbable Probabilities of Extreme Floods and Droughts, in O. Starosolsky and O.M. Meldev (eds), _Hydrology and Disasters_, James and James, London, 43--51.  
+https://www.itia.ntua.gr/en/getfile/1107/1/documents/1997_ImprobProbabilities_OCR.pdf
 1. LeCam, L., 1977.  Note on metastatistics or 'An essay toward stating a problem in the doctrine of chances,' _Synthese_, _36_, 133-160.
 1. Morabia, A., 2006. Pierre-Charles-Alexandre Louis and the evaluation of bloodletting, _J. Roy. Soc. Medicine_, _99_, 158--160. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1383766/pdf/0158.pdf
 1. Mulargia, F., P.B. Stark, and R.J. Geller, 2017. Why is probabilistic seismic hazard analysis (PSHA) still used? 
@@ -33,7 +43,7 @@ The method of comparison, experiments and observational studies, Snow’s invest
 
 ### Assignment.
 1. Read:
-    + SticiGui [Counting]((https://www.stat.berkeley.edu/~stark/SticiGui/Text/counting.htm)
+    + SticiGui [Counting](https://www.stat.berkeley.edu/~stark/SticiGui/Text/counting.htm)
     + SticiGui [Theories of Probability](https://www.stat.berkeley.edu/~stark/SticiGui/Text/probabilityTheory.htm)
     + SticiGui [Naive set theory](https://www.stat.berkeley.edu/~stark/SticiGui/Text/sets.htm)
     + SticiGui [Logic](https://www.stat.berkeley.edu/~stark/SticiGui/Text/logic.htm)
