@@ -11,9 +11,9 @@ header-includes:
 
 ## P.B. Stark www.stat.berkeley.edu/~stark
 
-+ **This document:** www.github.com/pbstark/Kavli18/kavliStat18.pdf
++ **This document:** www.github.com/pbstark/basicsKavli18/kavliStat18.pdf
 
-+ **Repository for the course:** www.github.com/pbstark/Kavli18/
++ **Repository for the course:** www.github.com/pbstark/basicsKavli18/
 
 ### Last edited 10 July 2018, 5:03GMT
 
@@ -37,10 +37,13 @@ https://www.itia.ntua.gr/en/getfile/1107/1/documents/1997_ImprobProbabilities_OC
 1. Mulargia, F., P.B. Stark, and R.J. Geller, 2017. Why is probabilistic seismic hazard analysis (PSHA) still used? 
 1. Stark, P.B., and D.A. Freedman, 2003. What is the Chance of an Earthquake?, in _Earthquake Science and Seismic Risk Reduction_, F. Mulargia and R.J. Geller, eds., NATO Science Series IV: Earth and Environmental Sciences, v. 32, Kluwer, Dordrecht, The Netherlands, 201-213. https://www.stat.berkeley.edu/~stark/Preprints/611.pdf
 1. Stark, P.B., 1997. [SticiGui](https://www.stat.berkeley.edu/~stark/SticiGui/) Various chapters assigned below.
+1. Stark, P.B., 2015. Constraints versus priors. _SIAM/ASA Journal on Uncertainty Quantification_, _3_(1), 586--598. doi:10.1137/130920721,  
+Reprint: http://epubs.siam.org/doi/10.1137/130920721,  
+Preprint: https://www.stat.berkeley.edu/~stark/Preprints/constraintsPriors15.pdf.
 1. Stark, P.B., 2016a. [Pay no attention to the model behind the curtain](https://www.stat.berkeley.edu/~stark/Preprints/eucCurtain15.pdf)
 1. Stark, P.B., 2016b. The value of P-values, _The American Statistician_, _70_, DOI:10.1080/00031305.2016.1154108
 1. Stark, P.B., 2017. [Mathematical Foundations](https://github.com/pbstark/S157F17/blob/master/math-foundations.ipynb), [Inequalities](https://github.com/pbstark/S157F17/blob/master/math-inequalities.ipynb), [Introduction to permutation tests](https://github.com/pbstark/S157F17/blob/master/permute-intro.ipynb), [Rabbits and Cargo-Cult Statistics](https://github.com/pbstark/S157F17/blob/master/rabbits.ipynb), [Generating pseudo-random samples and permutations](https://github.com/pbstark/S157F17/blob/master/permute-sample.ipynb)
-1. Stark, P.B., and A. Saltelli, 2018. Cargo-cult Statistics and Scientific Crisis, _Significance_, _15_(4), 40--43. Preprint: https://www.significancemagazine.com/2-uncategorised/593-cargo-cult-statistics-and-scientific-crisis
+1. Stark, P.B., and A. Saltelli, 2018. Cargo-cult Statistics and Scientific Crisis, _Significance_, _15_(4), 40--43. Preprint: https://www.significancemagazine.com/593
 1. Urban, M.C., 2015. Accelerating extinction risk from climate change, _Science_, _348_, Issue 6234, 571--573, DOI: 10.1126/science.aaa4984, http://science.sciencemag.org/content/348/6234/571.full
 
 ---
@@ -68,7 +71,7 @@ by changing the subject.
 
 + To answer real-world scientific questions, critical thinking and subject-matter knowledge are more important than mathematical, statistical, or computational technique.
 
-### Wisdom.
+#### Wisdom.
 
 > There is a natural desire to substitute intellectual capital for labor, and an equally-natural preference for system and rigor over methods that seem more haphazard.  
 -- David A. Freedman, 2008
@@ -86,7 +89,7 @@ by changing the subject.
 > Fallacies do not cease to be fallacies because they become fashions.  
 -- G.K. Chesterton
 
-### Snow on London cholera epidemic of 1853-1854.
+#### Snow on London cholera epidemic of 1853-1854.
 
 John Snow was a nineteenth-century physician in London.
 In 1855, decades before the germ theory of disease was accepted, Snow showed
@@ -171,7 +174,7 @@ Which buildings were served by which water company was largely
 accidental: other than water supplier, there was not much difference that could
 account for the differences in the rate of cholera.
 
-#### Cholera deaths by water source, London epidemic of 1853&ndash;1854. Snow's Table IX, via Freedman, 1999.
+**Cholera deaths by water source, London epidemic of 1853&ndash;1854. Snow's Table IX, via Freedman, 1999.**
 
 | water supplier | houses | deaths from cholera | deaths per 10,000 |
 |:---------------|-------:|--------------------:|------------------:|
@@ -180,19 +183,19 @@ account for the differences in the rate of cholera.
 | rest of London | 256,423 | 1,422 | 59 |
 
 
-### Louis and bloodletting
+#### Louis and bloodletting
 
 Pierre-Charles-Alexandre Louis was an early 19th century physician in Paris.
 At the time, bloodletting (by leaches or lancets) was a commonly accepted remedy for almost anything; the theory was that illnesses were caused by inflammation of various organs, and that bleeding the subject reduced that inflammation.
 The leading physician promoting the use of leeches, Broussais, was so successful that France imported 42 medical million leeches in 1833.
 
-Louis compared pnueumonia patients bled "early" with those bled "late."
+Louis compared pnueumonia patients bled "early" with those bled "late." See the [data transcribed by Morabia](http://www.epidemiology.ch/history/louis.htm).
 
 
 ---
 
 ## Lecture 2: Probability Models
-Equally likely outcomes, the frequency theory, the subjective theory, probability as metaphor, probability models, Kolmogorov’s axioms, consequences of the axioms, partitions, conditional probability, the multiplication rule, Bayes’ rule, the law of total probability, useful probability inequalities. Box models, sampling distributions, the Law of Large Numbers, the expected value, common distributions arising from 0-1 boxes. Parameters, statistics, and estimation. Ontology of probability in applications. Bayesian and frequentist uncertainties; credible intervals and confidenece intervals. Probability models in practice: earthquake probabilities, climate change and extinctions, birds and wind turbines.
+Equally likely outcomes, the frequency theory, the subjective theory, probability as metaphor, probability models, Kolmogorov’s axioms, consequences of the axioms, partitions, conditional probability, the multiplication rule, Bayes’ rule, the law of total probability, useful probability inequalities. Box models, sampling distributions, the Law of Large Numbers, the expected value, common distributions arising from 0-1 boxes. Parameters, statistics, and estimators. Ontology of probability in applications. Bayesian and frequentist uncertainties; credible intervals and confidenece intervals. Probability models in practice: earthquake probabilities, climate change and extinctions, birds and wind turbines.
 
 ### Assignment
 
@@ -208,12 +211,82 @@ Equally likely outcomes, the frequency theory, the subjective theory, probabilit
     + Klemes (1989)
     + LeCam (1977)
     + Stark and Freedman (2003)
+    + Stark (2015)
+    + Cornell (1968)
     + Mulargia et al. (2017)
     + Urban (2015), including [the supplementary materials](http://science.sciencemag.org/content/suppl/2015/04/29/348.6234.571.DC1?_ga=2.4039536.1548654680.1531042126-749553562.1514254187)
 1. Work the self-test problems in the chapters of SticiGui assigned for this lecture.
 1. Mathematics students, please find a non-mathematics student, and vice versa. Discuss the LeCam, Klemes, and Urban  papers with each other; explain to each other (or figure out together) any concepts you don't understand. 
 1. **To hand in:** Urban estimates that 7.9% of species will become extinct as a result of climate change, with a 95% confidence interval of [6.2%, 9.8%]. Explain how Urban calculates the estimate and uncertainty. Is his work based on a random sample of species? Of geography? Explain his statistical model. Identify where in his work he assumes that associations are response schedules. (Hint: one of his references is McDonald, K.A., and J.H. Brown, 1992. Using montane mammals to model extinctions due to global change. _Conserv. Biol._, _6_, 409--415. doi:10.1046/j.1523-1739.1992.06030409.x) For each such assumption, say whether you think it is reasonable, and explain why. Some aspects of the paper are Bayesian. What are the priors? What do the uncertainties mean? Is the interval [6.2%, 9.8%] a confidence interval? List 5 sources of uncertainty that he omits. Do you think those sources are smaller or larger than those he includes? Explain.
 
+### Notes.
+
++ Theories of Probability _define_ what probability means. What does it mean to say, "the chance a fair coin lands heads when it is tossed is 50%"? Three common interpretations, plus two others:
+    - equally likely outcomes
+    - frequency theory
+    - subjective theory
+    - probability models
+    - metaphor
++ How does probability enter a scientific question?
+    - "physics" of the problem (or measurement error) involves randomness
+    - deliberate randomization (sampling, randomized experiments)
+    - invented model or analogy or metaphor
+    - frequencies are not probabilities (nor, in general, estimates of probabilities)
++ Kolmogorov's axioms: mathematical probability
+    - partitions
+    - simple consequences of the axioms
+    - Bonferroni's inequality, inclusion-exclusion
+    - conditional probability
+    - multiplication rule
+    - law of total probability
+    - Bayes' rule
++ Random variables
+    - random variables derived from box models
++ Expectation
+    - Law of Large Numbers
+    - expected value
+    - expected value of functions of a random variable
+    - standard error and variance
+    - tail sum formula
+    - Jensen's inequality
+    - Markov's inequality
+    - Chebychev's inequality
+    - conditional expectation
+        + law of iterated expectation
+        + Eve's law
++ Parameters, statistics, estimators
+    - assessing estimators
+        + bias, variance, MSE
+        + loss, risk
+        + optimality criteria, including minimax
+    - confidence sets
++ Bayes estimation and inference
+    - priors
+        + "uninformative" priors
+        + conjugate priors
+    - posteriors
+    - posterior risk and optimal Bayes estimates
+    - credible regions
+    - interpretation
+        + example: election audits
++ Connections between Bayesian and Frequentist approaches
+    - admissibility
+    - duality between minimax and Bayes for least-favorable prior
+    - consistency results for proper priors, fixed-dimension parameters
+    - contrasting the meanings of uncertainty: what is fixed, and what is random?
++ Representing uncertainty: 
+    - Epistemic uncertainty
+    - Aleatory uncertainty
+    - Is all uncertainty representable as a probability?
+    - Priors add information to constraints
+    - Does it matter?
++ Examples
+    - historical nuclear tests
+    - avian / wind-turbine interactions
+    - probabilistic seismic hazard analysis
+    - climate change and extinctions
+    
+ 
 ---
 
 ## Lecture 3: Tests
@@ -227,4 +300,4 @@ Statistical hypotheses, null and alternative hypotheses, hypothesis tests, famil
     + [Introduction to permutation tests](https://github.com/pbstark/S157F17/blob/master/permute-intro.ipynb)
     + [Generating pseudo-random samples and permutations](https://github.com/pbstark/S157F17/blob/master/permute-sample.ipynb)
     + Boring, Ottoboni, and Stark, 2016.
-1. **To hand in:** Implement permutation tests (in R or Python) for the hypotheses about bloodletting you formulated for the first assignment, using the data Morabia transcribed from Louis. Discuss numerical issues in implementing the permutation tests. What pseudo-random number generator did you use? How did you set the seed? How did you choose the number of random permutations to perform? (Is there a principle you might use to decide the number? If so, what?) What test statistic(s) did you use? Why did you pick those? How to they connect to the relevant alternative hypotheses? Do you think the results would be qualitatively different if you had used a different test statistic? Discuss your findings, including any weaknesses in your framing of the problem (the statistical assumptions) and in the numerical analysis. 
+1. **To hand in:** Implement permutation tests (in R or Python) for the hypotheses about bloodletting you formulated for the first assignment, using the data Morabia transcribed from Louis. Discuss numerical issues in implementing the permutation tests. What pseudo-random number generator did you use? How did you set the seed? How did you choose the number of random permutations or random samples to generate? How did you implement the procedure? (Is there a principle you might use to decide the number? If so, what?) What test statistic(s) did you use? Why did you pick those? How to they connect to the relevant alternative hypotheses? Do you think the results would be qualitatively different if you had used a different test statistic? Discuss your findings, including any weaknesses in your framing of the problem (the statistical assumptions) and in the numerical analysis. Test each component of your code using a unit test. Turn in your results and your code, including the unit tests of the code.
