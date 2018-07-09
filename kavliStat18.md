@@ -11,16 +11,21 @@ header-includes:
 
 ## P.B. Stark www.stat.berkeley.edu/~stark
 
-**This document:** www.github.com/pbstark/Kavli18/kavliStat18.pdf
++ **This document:** www.github.com/pbstark/Kavli18/kavliStat18.pdf
 
-### Last edited 10 July 2018
++ **Repository for the course:** www.github.com/pbstark/Kavli18/
+
+### Last edited 10 July 2018, 5:03GMT
 
 --- 
 
 ## Reading for the week, and other references
 
 1. Boring, A., K. Ottoboni, and P.B. Stark, 2016. Student evaluations of teaching (mostly) do not measure teaching effectiveness, _ScienceOpen Research_, DOI: 10.14293/S2199-1006.1.SOR-EDU.AETBZC.v1 https://www.scienceopen.com/document?vid=818d8ec0-5908-47d8-86b4-5dc38f04b23e
+1. Cornell, C.A., 1968. Engineering seismic risk analysis, _Bull. Seism. Soc. Am_, _58_, 1583--1606. 
+1. Feynman, R., 1974. CalTech Commencement Address, http://calteches.library.caltech.edu/51/2/CargoCult.htm
 1. Freedman, D.A., 1995. Some issues in the foundations of statistics, _Foundations of Science_, _1_, 19--39. https://doi.org/10.1007/BF00208723
+1. Freedman, D.A., 1999. From association to causation: some remarks on the history of statistics, _Statistical Science_, _14_(3), 243--258.
 1. Freedman, D.A., 2008. On types of scientific inquiry: the role of qualitative reasoning, _The Oxford Handbook of Political Methodology_, Box-Steffensmeier, J.M., H.E. Brady, and D. Collier (eds), Oxford University Press, Oxford. DOI: 10.1093/oxfordhb/9780199286546.003.0012. [Preprint](https://www.stat.berkeley.edu/~census/anomaly.pdf)
 1. Freedman, D.A., 2009. _Statistical Models: Theory and Practice_, 2nd edition, Cambridge University Press.
 1. Freedman, D.A., R. Pisani, and R. Purves, 2007. _Statistics, 4th edition_, W.W. Norton, New York.
@@ -40,7 +45,7 @@ https://www.itia.ntua.gr/en/getfile/1107/1/documents/1997_ImprobProbabilities_OC
 ---
 
 ## Lecture 1: Introduction to Inference.
-The method of comparison, experiments and observational studies, Snow’s investigation of the cause of cholera, Pierre Louis and bloodletting, confounding, randomization, controls, blinding, the Neyman model for causal inference, the Lady Tasting Tea experiment, Fisher’s Exact Test, response schedules.
+Importance of subject-matter knowledge, critical thinking, and curiosity. The method of comparison, experiments and observational studies, Snow’s investigation of the cause of cholera, Pierre Louis and bloodletting, confounding, randomization, controls, blinding, the Neyman model for causal inference, the Lady Tasting Tea experiment, Fisher’s Exact Test, response schedules.
 
 ### Assignment.
 1. Read:
@@ -57,16 +62,39 @@ The method of comparison, experiments and observational studies, Snow’s invest
 
 ### Notes.
 
-Snow on London cholera epidemic of 1853-1854.
++ No amount of computation or theory can compensate for bad study design--but it can hide the issues
+by changing the subject. 
 
-John Snow was a nineteenth-century physician in London, England.
++ To answer real-world scientific questions, critical thinking and subject-matter knowledge are more important than mathematical, statistical, or computational technique.
+
+### Wisdom.
+
+> There is a natural desire to substitute intellectual capital for labor, and an equally-natural preference for system and rigor over methods that seem more haphazard.  
+-- David A. Freedman, 2008
+
+> Naturally, there is a strong desire to substitute intellectual capital for labor. That is why investigators often try to base causal inference on statistical models. With this approach, P-values play a crucial role. The technology is relatively easy to use and promises to open a wide variety of questions to the research effort. However, the appearance of methodological rigor can be deceptive. Like confidence intervals, P-values generally deal with the problem of sampling error not the problem of bias. Even with sampling error, artifactual results are likely if there is any kind of search over possible specifications for a model, or different definitions of exposure and disease. Models may be used in efforts to adjust for confounding and other sources of bias, but many somewhat arbitrary choices are made. Which variables to enter in the equation? What functional form to use? What assumptions to make about error terms? These choices are seldom dictated either by data or prior scientific knowledge. That is why judgment is so critical, the opportunity for error so large and the number of successful applications so limited.  
+-- David A. Freedman, 1999
+
+
+> If we are uncritical we shall always find what we want: we shall look for, and find, confirmations, and we shall look away from, and not see, whatever might be dangerous to our pet theories. In this way it is only too easy to obtain what appears to be overwhelming evidence in favor of a theory which, if approached critically, would have been refuted.  
+-- Karl Popper
+
+> Whenever a theory appears to you as the only possible one, take this as a sign that you have neither understood the theory nor the problem which it was intended to solve.   
+-- Karl Popper
+
+> Fallacies do not cease to be fallacies because they become fashions.  
+-- G.K. Chesterton
+
+### Snow on London cholera epidemic of 1853-1854.
+
+John Snow was a nineteenth-century physician in London.
 In 1855, decades before the germ theory of disease was accepted, Snow showed
 that cholera is caused by an infectious organism that lives in water.
 His argument had many facets:
 an apparent time lag between infection and symptoms, explained by the time
 it takes the organism to reproduce in the human body; propagation of the disease along
 trade routes;
-the fact that sailors visiting ports where there was cholera did not get sick until
+sailors coming from places free of cholera, then visiting ports where there was cholera, did not get sick until
 they came in contact with locals; identifying the first and second cases in the 1848
 London cholera epidemic (the first was a seaman named John Harnold who had just come
 from Hamburg,  Germany, where there was a cholera outbreak; the second was the
@@ -74,14 +102,16 @@ person who stayed in the room Harnold had used, after Harnold died).
 Snow found apartment buildings where many people had died, adjacent to apartment
 buildings where few or none had died; their water suppliers differed.
 Following an outbreak of cholera in 1854, Snow made a map of the residences of victims.
-They were concentrated near a public water pump: the Broad Street pump in Soho.
+They were concentrated near a public water pump, the Broad Street pump in Soho.
 A few buildings in the area were relatively unaffected by cholera; it turned out that
-their water supplies were different (a brewery and a poorhouse, both of which had their
-own pumps).
-Snow showed that most of the cholera victims in other parts of London had drunk from
-the Broad Street pump.
+their water supplies were different (a brewery and a poorhouse, both of which had their own pumps).
+Snow showed that most of the cholera victims in other parts of London had drunk from the Broad Street pump.
 
-"Miasma" was the competing theory; fit the data quite well (function of elevation above the Thames).
+"Miasma" was the competing theory. William Farr, prominent medical statistician at the time, claimed pollution (noxious smells, etc.) were the cause. 
+Farr proposed the model $a/(b+x)$, where
+x is elevation. It fit the data for the 1848-1849 epidemic very well.
+
+In Snow's words:
 
 >Although the
 above facts shown in the table above afford very strong evidence of the
@@ -140,13 +170,22 @@ Which buildings were served by which water company was largely
 accidental: other than water supplier, there was not much difference that could
 account for the differences in the rate of cholera.
 
-### Cholera deaths by water source, London epidemic of 1853&ndash;1854. Snow's Table IX, via Freedman, 1999.
+#### Cholera deaths by water source, London epidemic of 1853&ndash;1854. Snow's Table IX, via Freedman, 1999.
 
 | water supplier | houses | deaths from cholera | deaths per 10,000 |
 |:---------------|-------:|--------------------:|------------------:|
 | Southwark & Vauxhall | 40,046 | 1,263 | 315 |
 | Lambeth | 26,107 | 98 | 37 |
 | rest of London | 256,423 | 1,422 | 59 |
+
+
+### Louis and bloodletting
+
+Pierre-Charles-Alexandre Louis was an early 19th century physician in Paris.
+At the time, bloodletting (by leaches or lancets) was a commonly accepted remedy for almost anything; the theory was that illnesses were caused by inflammation of various organs, and that bleeding the subject reduced that inflammation.
+The leading physician promoting the use of leeches, Broussais, was so successful that France imported 42 medical million leeches in 1833.
+
+Louis compared pnueumonia patients bled "early" with those bled "late."
 
 
 ---
@@ -171,6 +210,7 @@ Equally likely outcomes, the frequency theory, the subjective theory, probabilit
     + Mulargia et al. (2017)
     + Urban (2015), including [the supplementary materials](http://science.sciencemag.org/content/suppl/2015/04/29/348.6234.571.DC1?_ga=2.4039536.1548654680.1531042126-749553562.1514254187)
 1. Work the self-test problems in the chapters of SticiGui assigned for this lecture.
+1. Mathematics students, please find a non-mathematics student, and vice versa. Discuss the LeCam, Klemes, and Urban  papers with each other; explain to each other (or figure out together) any concepts you don't understand. 
 1. **To hand in:** Urban estimates that 7.9% of species will become extinct as a result of climate change, with a 95% confidence interval of [6.2%, 9.8%]. Explain how Urban calculates the estimate and uncertainty. Is his work based on a random sample of species? Of geography? Explain his statistical model. Identify where in his work he assumes that associations are response schedules. (Hint: one of his references is McDonald, K.A., and J.H. Brown, 1992. Using montane mammals to model extinctions due to global change. _Conserv. Biol._, _6_, 409--415. doi:10.1046/j.1523-1739.1992.06030409.x) For each such assumption, say whether you think it is reasonable, and explain why. Some aspects of the paper are Bayesian. What are the priors? What do the uncertainties mean? Is the interval [6.2%, 9.8%] a confidence interval? List 5 sources of uncertainty that he omits. Do you think those sources are smaller or larger than those he includes? Explain.
 
 ---
